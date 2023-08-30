@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { TextField, Button, Grid, Paper, Typography } from '@mui/material';
 import LockIcon from '@mui/icons-material/Lock';
 
-interface LoginFormProps {
-  onLogin: (username: string, password: string) => void;
-}
+// interface LoginFormProps {
+//   onLogin: (username: string, password: string) => void;
+// }
 
-const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
+const LoginForm = ({ onLogin }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
